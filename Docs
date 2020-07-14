@@ -1,0 +1,60 @@
+Structure:
+
+    Every line can be either of two things:
+        1)  A normal line
+        2)  A heading (With additional decoration for emphasis)
+    
+    Heading:
+        Any line begining of the structure {{ <Some random text> }} will
+        be treated as a heading.
+
+        It will be within a banner with a padding of 3 spaces.
+
+        Ex: {{Heading text}}
+        OP:
+             +------------------+
+            ||   Heading text   ||
+             +------------------+
+
+    Line:
+        A line is to be preceded with '>'. Every '>' will contribute to 
+        one level of '---->' from the nearest header.
+
+        
+        Lines below a particular heading will be represented with arrows 
+        emerging from the heading. 
+
+        Any Leading or trailing spaces shall be ignored completely
+
+        Ex:
+            {{Heading text}}
+            >Point 1
+            >Point 2
+            >{{Heading text2}}
+            >>Point 1
+            asdddasd
+            >>Point 2
+            fffcgfgcg
+            >Point 3
+        OP:
+            +=================+
+           ||   Heading text  ||
+            +=================+
+            |
+            +---->Point 1
+            |
+            +---->Point 2
+            |
+            |      +====================+
+            +---->||   Heading text 2   ||
+            |      +====================+
+            |      |
+            |      +---->Point 1
+            |      |     asdddasd
+            |      |
+            |      +---->Point 2
+            |            fffcgfgcg
+            |
+            +---->Point 3
+
+

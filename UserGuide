@@ -1,0 +1,82 @@
+Made with NoteMaker
+
+
+ +----------------+
+||   User Guide   ||
+ +----------------+
+|
+|-------> This guide is meant to help you understand how the
+|          Notemaker works. You can generate good looking no
+|         tes using Note Maker using any general text editor
+|          such as Notepad, vim etc.
+|
+|-------> NoteMaker makes taking quick notes easy and helps 
+|         you convert your notes into a beautfully formatted
+|          document that preserves all the structure of your
+|          notes
+|
+|
+|         +-----------+
+|------->||   Usage   ||
+|         +-----------+
+|        |
+|        |
+|        |         +-------------+
+|        |------->||   Command   ||
+|        |         +-------------+
+|        |                |
+|        |                |-------> NoteMaker.py <source_file>
+|        |
+|        |
+|        |         +-------------+
+|        |------->||   Headers   ||
+|        |         +-------------+
+|        |                |
+|        |                |-------> any line within the curly braces i.e {{<Some rando
+|        |                |         m text here>}} is treated as a new header and will
+|        |                |          be decorated in a special way
+|        |
+|        |
+|        |         +-----------+
+|        |------->||   Lines   ||
+|        |         +-----------+
+|        |                |
+|        |                |-------> lines without any curly braces around them are tre
+|        |                |         ated as normal lines and are rendered without any 
+|        |                |         additional decorations. They are just normal point
+|        |                |         s under a particular heading.
+|        |
+|        |
+|        |         +-------------+
+|        |------->||   Indents   ||
+|        |         +-------------+
+|        |                |
+|        |                |-------> These are what actually create the structure of no
+|        |                |         te. These will help you preserve the hierarchy of 
+|        |                |         your points and make them easy to understand.
+|        |                |
+|        |                |-------> This is what shows the true power of NoteMaker and
+|        |                |          you will see that it will help you make your runn
+|        |                |         ing notes during your boring EVS classes stunningl
+|        |                |         y structured and easy to understand. Without NoteM
+|        |                |         aker it would take you hours to create such good q
+|        |                |         uality notes
+|        |                |
+|        |                |-------> An indent is nothing but a series of '>'. All head
+|        |                |         ers or points having the same number of '>'s will 
+|        |                |         be at the same level.
+|        |                |
+|        |                |-------> Any header or point having less indent is at a hig
+|        |                |         her level and is a heading of all other headers or
+|        |                |          points directly below it and with an indent more 
+|        |                |         than itself
+|        |                |
+|        |                |-------> Always make sure to start your document with one l
+|        |                |         evel of indent
+|        |
+|        |-------> In case you want to see some examples....it is sta
+|        |         ring right in front of you. This document has been
+|        |          generated through NoteMaker. See the file titled 
+|        |         'UserGuid.src' to see the source of the 'UserGuide
+|        |         ' file. Feel free to feed it into the NoteMaker.py
+|        |          program and see the output.

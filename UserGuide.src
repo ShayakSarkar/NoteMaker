@@ -1,0 +1,57 @@
+>{{User Guide}}
+>>This guide is meant to help you understand how the
+  Notemaker works. You can generate good looking notes
+  using Note Maker using any general text editor such
+  as Notepad, vim etc. 
+
+>>NoteMaker makes taking quick notes easy and helps
+  you convert your notes into a beautfully formatted
+  document that preserves all the structure of your
+  notes
+
+>>{{Usage}}
+>>>{{Command}}
+>>>>NoteMaker.py <source_file>
+>>>{{Headers}}
+>>>>any line within the curly braces i.e 
+    {{<Some random text here>}}
+    is treated as a new header and will be decorated
+    in a special way
+
+>>>{{Lines}}
+>>>>lines without any curly braces around them are 
+    treated as normal lines and are rendered without
+    any additional decorations. They are just normal
+    points under a particular heading.
+
+>>>{{Indents}}
+>>>>These are what actually create the structure of 
+    note. These will help you preserve the 
+    hierarchy of your points and make them easy to 
+    understand.
+
+>>>>This is what shows the true power of NoteMaker
+    and you will see that it will help you make 
+    your running notes during your boring EVS classes
+    stunningly structured and easy to understand.
+    Without NoteMaker it would take you hours to 
+    create such good quality notes
+
+>>>>An indent is nothing but a series of '>'. All 
+    headers or points having the same number of '>'s
+    will be at the same level. 
+
+>>>>Any header or point having less indent is at a
+    higher level and is a heading of all other 
+    headers or points directly below it and with an 
+    indent more than itself
+
+>>>>Always make sure to start your document with one
+    level of indent
+
+>>>In case you want to see some examples....it is 
+   staring right in front of you. This document has
+   been generated through NoteMaker. See the file 
+   titled 'UserGuid.src' to see the source of the 
+   'UserGuide' file. Feel free to feed it into the 
+   NoteMaker.py program and see the output.
