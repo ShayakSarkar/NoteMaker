@@ -93,7 +93,10 @@ Made with NoteMaker
 |        |                |         as @<Reference Name> <Forgotten Point>.
 |        |                |
 |        |                |-------> This will add the additional point to the header r
-|        |                |         eferenced by <Reference Name>
+|        |                |         eferenced by <Reference Name>. NoteMaker encourage
+|        |                |         s you to add references to headers as frequently a
+|        |                |         s possible as it shall make it easier for you in c
+|        |                |         ase you forget to add something to a header.
 |        |                |
 |        |                |-------> **NOTE** NoteMaker only supports references to hea
 |        |                |         ders. Avoid using the '@' symbol for any other pur
