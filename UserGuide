@@ -74,6 +74,39 @@ Made with NoteMaker
 |        |                |-------> Always make sure to start your document with one l
 |        |                |         evel of indent
 |        |
+|        |
+|        |         +----------------+
+|        |------->||   References   ||
+|        |         +----------------+
+|        |                |
+|        |                |-------> If you have ever felt halfway through your notes t
+|        |                |         hat you have to go back and write some more about 
+|        |                |         a particular topic, then you are not alone
+|        |                |
+|        |                |-------> NoteMaker's References feature has been provided j
+|        |                |         ust to help you with this problem
+|        |                |
+|        |                |-------> You can make a reference to any Header using the '
+|        |                |         @' symbol. Ex: {{<Header>}} @<Reference Name>
+|        |                |
+|        |                |-------> Now you shall be able to use the <Reference Name> 
+|        |                |         as @<Reference Name> <Forgotten Point>.
+|        |                |
+|        |                |-------> This will add the additional point to the header r
+|        |                |         eferenced by <Reference Name>
+|        |                |
+|        |                |-------> **NOTE** NoteMaker only supports references to hea
+|        |                |         ders. Avoid using the '@' symbol for any other pur
+|        |                |         pose during taking notes as it may lead to unexpec
+|        |                |         ted behaviour
+|        |                |
+|        |                |-------> **NOTE** Do not add headers as forgotten points us
+|        |                |         ing references.
+|        |                |
+|        |                |-------> **NOTE** Do not add more than one line(i.e using a
+|        |                |          carriage return) using a reference. Doing so will
+|        |                |          lead to unexpected behaviour.
+|        |
 |        |-------> In case you want to see some examples....it is sta
 |        |         ring right in front of you. This document has been
 |        |          generated through NoteMaker. See the file titled 
