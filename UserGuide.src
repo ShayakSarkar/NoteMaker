@@ -9,10 +9,10 @@
   document that preserves all the structure of your
   notes
 
->>{{Usage}}
->>>{{Command}}
+>>{{Usage}} @us
+>>>{{Command}} @com
 >>>>NoteMaker.py <source_file>
->>>{{Headers}}
+>>>{{Headers}} @head
 >>>>any line within the curly braces i.e 
     {{<Some random text here>}}
     is treated as a new header and will be decorated
@@ -24,7 +24,7 @@
     any additional decorations. They are just normal
     points under a particular heading.
 
->>>{{Indents}}
+>>>{{Indents}}@ind
 >>>>These are what actually create the structure of 
     note. These will help you preserve the 
     hierarchy of your points and make them easy to 
@@ -55,3 +55,7 @@
    titled 'UserGuid.src' to see the source of the 
    'UserGuide' file. Feel free to feed it into the 
    NoteMaker.py program and see the output.
+
+@com forgotten note
+@us Forgotten User Guide
+@ind forgotten indent note
