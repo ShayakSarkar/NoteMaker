@@ -21,9 +21,7 @@ class Tree:
     def insert_line_helper(self,node,data,level_ctr,cur_level,ref):
         if level_ctr==(cur_level+1):
             node.children.append(Node('L',data))
-            #print(node.children[-1].data)
             retval=node.children[-1]
-            #print(retval)
             if ref!=None:
                 references[ref]=retval
             return cp.copy(retval)
@@ -37,9 +35,7 @@ class Tree:
     def insert_header_helper(self,node,data,level_ctr,cur_level,ref):
         if level_ctr==(cur_level+1):
             node.children.append(Node('H',data))
-            #print(node.children[-1].data)
             retval=node.children[len(node.children)-1]
-            #print(retval)
             if ref!=None:
                 references[ref]=retval
             return cp.copy(retval)
@@ -53,12 +49,9 @@ class Tree:
     def insert_continuation_helper(self,node,data,level_ctr,cur_level):
         if level_ctr==(cur_level+1):
             node.children[-1].data=node.children[-1].data+' '+data
-            #print('****updated value:',node.children[-1].data)
             return
 
         if len(node.children)==0:
-            #print('Syntax error: Level exceeded')
-            #print('$$$$'+node.data+'s Children not found')
             return
 
         self.insert_continuation_helper(node.children[-1],data,level_ctr,cur_level+1)
@@ -72,19 +65,14 @@ class Tree:
             #print('Root added')
             return
         node=self.insert_header_helper(self.root,data,level_ctr,1,ref)
-        #print(node)
         return node
-        #print('header',data,'inserted')
 
     def insert_line(self,data,level_ctr,ref):
         node=self.insert_line_helper(self.root,data,level_ctr,1,ref)
-        #print(node)
         return node
-        #print('line',data,'inserted')
 
     def insert_continuation(self,data,level_ctr):
         self.insert_continuation_helper(self.root,data,level_ctr,1)
-        #print('continuation',data,'inserted')
 
 def make_tree(ifile):
 
@@ -102,11 +90,12 @@ def make_tree(ifile):
             #additional spaces provided
             #by the note taker for clarity
             continue
-        
+
         if line[0]=='@':
             #reference to a previously defined reference
             ref,line=line.split()[0][1:],' '.join(line.split()[1:])
             references[ref].children.append(Node('L',line))
+            prev_type_is_ref=True
             continue 
 
         level_ctr=0

@@ -49,6 +49,8 @@
 >>>>Always make sure to start your document with one
     level of indent
 
+>>>{{References}} @ref
+
 >>>In case you want to see some examples....it is 
    staring right in front of you. This document has
    been generated through NoteMaker. See the file 
@@ -56,6 +58,11 @@
    'UserGuide' file. Feel free to feed it into the 
    NoteMaker.py program and see the output.
 
-@com forgotten note
-@us Forgotten User Guide
-@ind forgotten indent note
+@ref If you have ever felt halfway through your notes that you have to go back and write some more about a particular topic, then you are not alone 
+@ref NoteMaker's References feature has been provided just to help you with this problem
+@ref You can make a reference to any Header using the '@' symbol. Ex: {{<Header>}} @<Reference Name>
+@ref Now you shall be able to use the <Reference Name> as @<Reference Name> <Forgotten Point>. 
+@ref This will add the additional point to the header referenced by <Reference Name>
+@ref **NOTE** NoteMaker only supports references to headers. Avoid using the '@' symbol for any other purpose during taking notes as it may lead to unexpected behaviour
+@ref **NOTE** Do not add headers as forgotten points using references.
+@ref **NOTE** Do not add more than one line(i.e using a carriage return) using a reference. Doing so will lead to unexpected behaviour.
