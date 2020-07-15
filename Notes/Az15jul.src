@@ -1,0 +1,12 @@
+>{{Notes 15 th Jul}}
+>>{{Sources of Software Insecurity}} @srcs
+>>>Complex and unavoidable threats may be there. There are many stakeholders.
+   Software is very large and it is not possible to make it consistently correct
+>>>Large number of vulnerabilities can be avoided if managers and software devs
+   know how to deal with them.
+>>>>The abscence of this knowledge can lead to disastrous consequences.
+>>>>>Therefore, dont ignore this 
+>>>Distributed software is more insecure(networked application-level software)
+>>>Wrong info, incorrect specs, complexity, unintended interactions can cause
+   exploitation of the software
+
