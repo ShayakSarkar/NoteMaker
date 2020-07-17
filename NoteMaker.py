@@ -179,14 +179,14 @@ def render(node,indent,j_fact):
             
         header=''
         for i in range(indent):
-            header+=(' '*i*tabwidth)+'|'
+            header+=(' '*tabwidth)+'|'
         header+=' '*(tabwidth)+' +---'+'-'*len(line)+'---+\n'
         for i in range(indent):
-            header+=(' '*i*tabwidth)+'|'
+            header+=(' '*tabwidth)+'|'
         header+='-'*(tabwidth-1)+'>'
         header+='||   '+line+'   ||\n'
         for i in range(indent):
-            header+=(' '*i*tabwidth)+'|'
+            header+=(' '*tabwidth)+'|'
         header+=' '*(tabwidth)+' +---'+'-'*len(line)+'---+'
         return header
 
@@ -194,21 +194,21 @@ def render(node,indent,j_fact):
     if node.type=='H':
         #print()
         for i in range(indent):
-            print(' '*(tabwidth*i)+'|',end='')
+            print(' '*(tabwidth)+'|',end='')
         print()
         #print()
         for i in range(indent):
-            print(' '*(tabwidth*i)+'|',end='')
+            print(' '*(tabwidth)+'|',end='')
         print()
         print(make_header_with_indent(node.data,indent))
 
     elif node.type=='L':
         #print()
         for i in range(indent):
-            print(i*tabwidth*' '+'|',end='')
+            print((tabwidth)*' '+'|',end='')
         print()
         for i in range(indent):
-            print(' '*(tabwidth*i)+'|',end='')
+            print(' '*(tabwidth)+'|',end='')
         print('-'*(tabwidth-1)+'> ',end='')
         is_first=True
         i=0
@@ -218,7 +218,7 @@ def render(node,indent,j_fact):
                 is_first=False
             else:
                 for j in range(indent):
-                    print(' '*j*tabwidth+'|',end='')
+                    print(' '*tabwidth+'|',end='')
                 print((tabwidth*' ')+' '+node.data[i:i+j_fact])
             i+=j_fact 
 
@@ -228,7 +228,8 @@ def render(node,indent,j_fact):
 justification_factor=50
 
 render(tree.root,0,justification_factor)
-
+print()
+print()
 ifile.close()
 
 
